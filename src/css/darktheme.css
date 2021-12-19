@@ -1,0 +1,275 @@
+.body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+  border: 2px solid red;
+}
+
+/* ===Calculator=== */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1.5rem;
+  margin: -10px;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.container {
+  max-width: 375px;
+  height: 90vh;
+  margin: auto;
+}
+
+.calculator > div {
+  border-radius: 0.5rem;
+}
+
+.header {
+  height: 8%;
+}
+
+h2 {
+  overflow: hidden;
+}
+
+.displayInput {
+  height: 5rem;
+  width: 18.5rem;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  display: grid;
+  /* font-weight: 600; */
+  /* font-family: Roboto, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  border: none;
+  border-radius: 0.5rem;
+  background: hsl(224, 36%, 15%);
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.numPad {
+  height: 65%;
+}
+
+/* ===header=== */
+.header,
+.themes,
+.themes-container {
+  display: grid;
+}
+
+.header {
+  width: 18.7rem;
+  box-sizing: border-box;
+  grid-template-columns: 50% 30% 20%;
+  margin-bottom: 1.5rem;
+}
+
+.calc,
+.theme,
+.btn-theme {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.calc {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.theme {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 2.1rem;
+  margin-left: 2rem;
+}
+.themes {
+  grid-template-rows: 50% 50%;
+}
+
+.themes-container {
+  text-align: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.themes-container button {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  background: none;
+}
+
+.toggle-btn-container {
+  border-radius: 1rem;
+  height: 1.7rem;
+  background: hsl(224, 36%, 15%);
+}
+
+.toggle-btn {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: none;
+  margin-left: 7.5px;
+  border-radius: 8px;
+  background: hsl(6, 70%, 34%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.numPad {
+  display: flex;
+  flex-direction: column;
+  margin-left: -0.05rem;
+  width: 18.5em;
+  background: hsl(223, 31%, 20%);
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+  padding-bottom: 2rem;
+}
+
+.numBtnContainer {
+  width: 17.5em;
+  height: 78%;
+  text-align: center;
+  display: grid;
+  gap: 0.5em;
+  row-gap: 1rem;
+  grid-template-columns: repeat(4, auto);
+  margin: 2rem auto;
+}
+
+.btn-div {
+  width: 4em;
+  height: 3.9em;
+}
+
+.btn {
+  width: 2em;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 0.2em;
+  border-left: none;
+  border-top: none;
+  border: none;
+  color: hsl(225, 21%, 49%);
+  background: hsl(45, 7%, 89%);
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+}
+
+.del,
+.reset {
+  color: white;
+  font-size: 1.1rem;
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 5px hsl(225, 35%, 33%);
+}
+
+.del {
+  width: 3.2em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.resetEqualBtn {
+  width: 17.5rem;
+  height: 15%;
+  margin: -1rem auto 1rem;
+  display: grid;
+  gap: 1em;
+  flex-wrap: nowrap;
+  grid-template-columns: 1fr 1fr;
+}
+
+.div-reset,
+.div-equals {
+  width: 100%;
+}
+
+.reset,
+.equals {
+  width: 8rem;
+}
+.equals {
+  background: tomato;
+  box-shadow: 0 5px rgb(209, 52, 25);
+}
+
+@media (min-width: 1000px) {
+  .header {
+    width: 30rem;
+    height: 4.2rem;
+  }
+
+  .theme {
+    margin-left: 5rem;
+  }
+
+  .container {
+    width: 520px;
+    margin-top: -0.3rem;
+    padding-bottom: 5rem;
+    margin-top: 0.3rem;
+  }
+
+  .numPad,
+  .displayInput {
+    width: 30rem;
+    border: 2px solid;
+  }
+
+  .display,
+  .displayInput {
+    font-size: 2.5rem;
+  }
+
+  .numBtnContainer {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .numPad {
+    width: 30rem;
+    min-height: 25rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .btn {
+    width: 5.8rem;
+    height: 3.5rem;
+    margin-left: 12px;
+  }
+
+  .resetEqualBtn {
+    height: 3rem;
+    margin-top: -20px;
+    width: 28rem;
+    gap: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  .reset,
+  .equals {
+    width: 13.7rem;
+  }
+
+  .equals {
+    margin-left: 0;
+  }
+}

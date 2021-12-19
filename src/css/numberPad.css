@@ -1,0 +1,118 @@
+.numPad {
+  display: flex;
+  flex-direction: column;
+  margin-left: -0.05rem;
+  width: 18.5em;
+  /* height: 5rem; */
+  background: hsl(223, 31%, 20%);
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+  padding-bottom: 2rem;
+}
+
+.numBtnContainer {
+  width: 17.5em;
+  height: 78%;
+  text-align: center;
+  display: grid;
+  gap: 0.5em;
+  row-gap: 1rem;
+  grid-template-columns: repeat(4, auto);
+  margin: 2rem auto;
+}
+
+.btn-div {
+  width: 4em;
+  height: 3.9em;
+  /* border: 1px solid red; */
+}
+
+.btn {
+  width: 2em;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 0.2em;
+  border-left: none;
+  border-top: none;
+  border: none;
+  color: hsl(225, 21%, 49%);
+  background: hsl(45, 7%, 89%);
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+}
+
+.del,
+.reset {
+  color: white;
+  font-size: 1.1rem;
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 5px hsl(225, 35%, 33%);
+}
+
+.del {
+  width: 3.2em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.resetEqualBtn {
+  width: 17.5rem;
+  height: 15%;
+  margin: -1rem auto 1rem;
+  display: grid;
+  gap: 1em;
+  flex-wrap: nowrap;
+  grid-template-columns: 1fr 1fr;
+}
+
+.div-reset,
+.div-equals {
+  width: 100%;
+}
+
+.reset,
+.equals {
+  width: 8rem;
+}
+.equals {
+  background: tomato;
+  box-shadow: 0 5px rgb(209, 52, 25);
+}
+
+@media (min-width: 1000px) {
+  .numBtnContainer {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .numPad {
+    width: 30rem;
+    min-height: 25rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .btn {
+    width: 5.8rem;
+    height: 3.5rem;
+    margin-left: 12px;
+  }
+
+  .resetEqualBtn {
+    height: 3rem;
+    margin-top: -20px;
+    width: 28rem;
+    gap: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  .reset,
+  .equals {
+    width: 13.7rem;
+  }
+
+  .equals {
+    margin-left: 0;
+  }
+}

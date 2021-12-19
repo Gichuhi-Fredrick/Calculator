@@ -1,0 +1,41 @@
+.calculator {
+  background: hsl(268, 75%, 9%);
+}
+
+.calc,
+.theme,
+.btn-theme,
+.displayInput {
+  color: hsl(52, 100%, 62%);
+}
+
+.toggle-btn-container,
+.displayInput,
+.numPad {
+  background: hsl(268, 71%, 12%);
+}
+
+.toggle-btn {
+  margin: 0 70%;
+  padding: 0;
+  background: hsl(176, 100%, 44%);
+}
+
+.btn {
+  color: hsl(52, 100%, 62%);
+  background: hsl(268, 47%, 21%);
+  box-shadow: 0 5px hsl(290, 70%, 36%);
+}
+
+.equals {
+  color: hsl(198, 20%, 13%);
+  background: hsl(176, 100%, 44%);
+  box-shadow: 0 5px hsl(177, 92%, 70%);
+}
+
+.del,
+.reset {
+  color: hsl(0, 0%, 100%);
+  background: hsl(281, 89%, 26%);
+  box-shadow: 0 5px hsl(285, 91%, 52%);
+}
